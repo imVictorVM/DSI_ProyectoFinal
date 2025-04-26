@@ -16,7 +16,10 @@ public class SmoothCameraLookAt : MonoBehaviour
     private int currentIndex = 0;
     private Vector3 targetPosition;
     private Vector3 currentVelocity;                       // Para SmoothDamp.
-    private float rotationVelocity;                        // Para suavizar rotación.
+
+     // Evento para notificar el cambio de nivel.
+    public delegate void LevelChangedHandler(int newLevelIndex);
+    public static event LevelChangedHandler OnLevelChanged;
 
     private void Start()
     {
@@ -75,6 +78,7 @@ public class SmoothCameraLookAt : MonoBehaviour
         {
             currentIndex++;
             targetPosition = cameraPoints[currentIndex].position;
+            OnLevelChanged?.Invoke(currentIndex); // Notifica a la UI.
             UpdateTargetPositionWithArc();
             ResetSmoothing();
         }
@@ -87,6 +91,7 @@ public class SmoothCameraLookAt : MonoBehaviour
         {
             currentIndex--;
             targetPosition = cameraPoints[currentIndex].position;
+            OnLevelChanged?.Invoke(currentIndex); // Notifica a la UI.
             UpdateTargetPositionWithArc();
             ResetSmoothing();
         }

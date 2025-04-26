@@ -1,0 +1,26 @@
+.level-tabs {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+    gap: 10px;
+}
+
+.level-tab {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid white;
+    border-radius: 50%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.level-tab.selected {
+    background-color: #ff00ff;
+    border-color: #ffffff;
+    box-shadow: 0 0 10px #ff00ff;
+}

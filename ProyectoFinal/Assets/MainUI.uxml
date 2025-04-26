@@ -1,6 +1,10 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement name="container" style="flex-grow: 1;">
-        <ui:VisualElement name="uno" style="flex-grow: 1; background-color: rgb(0, 12, 255);" />
-        <ui:VisualElement name="dos" style="flex-grow: 1; background-color: rgb(0, 255, 6);" />
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/USS/LevelSelectorUI.uss?fileID=7433441132597879392&amp;guid=e7971471416119a4b98f9fa8901ea772&amp;type=3#LevelSelectorUI" />
+    <ui:VisualElement class="level-tabs">
+        <ui:Label name="tab1" text="1" class="level-tab" />
+        <ui:Label name="tab2" text="2" class="level-tab" />
+        <ui:Label name="tab3" text="3" class="level-tab" />
+        <ui:Label name="tab4" text="4" class="level-tab" />
+        <ui:Label name="tab5" text="5" class="level-tab" />
     </ui:VisualElement>
 </ui:UXML>
