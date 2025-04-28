@@ -275,6 +275,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d508953666b42b8439f3058678e59a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuUXML: {fileID: 9197481963319205126, guid: ea8027b2ac8004441ae711a4d6966961, type: 3}
+  settingsUXML: {fileID: 9197481963319205126, guid: 21a76536e2fd99f4297c2ff5822218cb, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

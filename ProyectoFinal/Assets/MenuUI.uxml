@@ -1,8 +1,14 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/USS/MainMenu.uss?fileID=7433441132597879392&amp;guid=a59bb18baf947794784a21cd35a5e432&amp;type=3#MainMenu" />
+    <ui:VisualElement class="background">
+        <ui:VisualElement class="tarta-image" />
+    </ui:VisualElement>
     <ui:VisualElement class="main-container">
         <ui:Label text="JUEGO" class="title" />
-        <ui:Button text="JUGAR" name="playButton" class="menu-button" />
-        <ui:Button text="SALIR" name="quitButton" class="menu-button" />
+        <ui:VisualElement class="button-container">
+            <ui:Button text="JUGAR" name="playButton" class="menu-button" />
+            <ui:Button text="AJUSTES" name="settingsButton" class="menu-button" />
+            <ui:Button text="SALIR" name="quitButton" class="menu-button" />
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
