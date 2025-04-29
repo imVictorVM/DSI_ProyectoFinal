@@ -4,6 +4,20 @@
     position: relative;
 }
 
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 8px 16px;
+    background-color: #2c3e50;
+    color: white;
+    border: 1px solid #34495e;
+    border-radius: 4px;
+    font-size: 14px;
+
+}
+
+
 .level-tabs {
     position: absolute;
     bottom: 20px;
@@ -14,23 +28,25 @@
 }
 
 .level-tab {
-    width: 40px;
-    height: 40px;
-    background-color: rgba(0, 0, 0, 0.5);
+    width: 60px;
+    height: 60px;
+    background-color: #c3c3c3;
     border: 2px solid white;
     border-radius: 50%;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
+    overflow: hidden; 
 }
 
 .level-tab.selected {
-    background-color: #ff00ff;
+    background-color: #fdaeaf;
     border-color: #ffffff;
     box-shadow: 0 0 10px #ff00ff;
 }
 
+.level-tab-image {
+    width: 100%;
+    height: 100%;
+    -unity-background-scale-mode: scale-to-fit;
+}
 
 
 .level-card {
@@ -73,4 +89,33 @@
 .toggle-complete-btn:hover {
     background-color: rgba(255, 0, 255, 0.5);
     transform: scale(1.05);
+}
+
+
+.button {
+    background-color: #4A90E2; 
+    border-radius: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    font-size: 16px;
+    unity-font-style: bold;
+    text-align: center;
+    border-width: 2px;
+    border-color: #357ABD;
+    border-style: solid;
+}
+
+
+.button:hover {
+    background-color: #5AA0F2;
+    border-color: #468AED;
+}
+
+
+.button:active {
+    background-color: #2C6BB0;
+    border-color: #1F4E80;
 }

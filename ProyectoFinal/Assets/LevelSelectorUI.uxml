@@ -1,17 +1,18 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/USS/LevelSelectorUI.uss?fileID=7433441132597879392&amp;guid=e7971471416119a4b98f9fa8901ea772&amp;type=3#LevelSelectorUI" />
     <ui:VisualElement class="main-container">
+        <ui:Button name="back-button" text="← Volver" class="back-button" />
         <ui:VisualElement class="level-tabs">
-            <ui:Label name="tab1" text="1" class="level-tab" />
-            <ui:Label name="tab2" text="2" class="level-tab" />
-            <ui:Label name="tab3" text="3" class="level-tab" />
-            <ui:Label name="tab4" text="4" class="level-tab" />
-            <ui:Label name="tab5" text="5" class="level-tab" />
+            <ui:Label name="tab1" class="level-tab" />
+            <ui:Label name="tab2" class="level-tab" />
+            <ui:Label name="tab3" class="level-tab" />
+            <ui:Label name="tab4" class="level-tab" />
+            <ui:Label name="tab5" class="level-tab" />
         </ui:VisualElement>
         <ui:VisualElement name="level-card" class="level-card">
             <ui:Label text="ESTADO DEL NIVEL" class="level-card-title" />
             <ui:Label name="level-status" text="NIVEL SIN COMPLETAR" />
-            <ui:Button name="toggle-complete-btn" text="Marcar completo" />
+            <ui:Button name="toggle-complete-btn" text="Marcar completo" class="button" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

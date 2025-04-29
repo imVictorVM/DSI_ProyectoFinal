@@ -1,8 +1,13 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/USS/SettingsMenu.uss?fileID=7433441132597879392&amp;guid=0a6f15ecb58e62446b82c24e6c5395fa&amp;type=3#SettingsMenu" />
     <Style src="project://database/Assets/USS/MainMenu.uss?fileID=7433441132597879392&amp;guid=a59bb18baf947794784a21cd35a5e432&amp;type=3#MainMenu" />
+    <ui:VisualElement class="background" style="flex-grow: 1;">
+        <ui:VisualElement class="tarta-image" style="flex-grow: 1;" />
+    </ui:VisualElement>
     <ui:VisualElement class="settings-container">
-        <ui:Button text="Volver" name="backButton" class="menu-button" />
+        <ui:Label tabindex="-1" text="AJUSTES" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="settings-title" style="-unity-text-align: upper-center;" />
         <VolumeSliderControl class="volume-control" />
+        <ui:VisualElement class="space" style="flex-grow: 1;" />
+        <ui:Button text="Volver" name="backButton" class="menu-button" />
     </ui:VisualElement>
 </ui:UXML>

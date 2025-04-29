@@ -14,6 +14,12 @@ public class MainMenuController : MonoBehaviour
     private enum MenuState { Main, Settings }
     private MenuState currentState;
 
+
+    private void Awake()
+    {
+        uiDocument = GetComponent<UIDocument>();
+        ChangeState(MenuState.Main);
+    }
     private void OnEnable()
     {
         uiDocument = GetComponent<UIDocument>();

@@ -117,4 +117,9 @@ public class SmoothCameraLookAt : MonoBehaviour
         yield return new WaitForSeconds(estimatedMoveDuration + smoothTime);
         inputCooldown = false;
     }
+
+    public int getActualPosition()
+    {
+        return currentIndex;
+    }
 }

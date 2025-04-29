@@ -17,7 +17,7 @@ public class VolumeSliderControl : VisualElement
         style.flexDirection = FlexDirection.Column;
 
        
-        _valueLabel = new Label("100%")
+        _valueLabel = new Label("AJUSTAR VOLUMEN\n100%")
         {
             name = "volume-value",
             style =
@@ -70,6 +70,6 @@ public class VolumeSliderControl : VisualElement
 
     private void UpdateLabel(float value)
     {
-        _valueLabel.text = $"{Mathf.RoundToInt(value)}%";
+        _valueLabel.text ="AJUSTAR VOLUMEN\n" +  $"{Mathf.RoundToInt(value)}%";
     }
 }
